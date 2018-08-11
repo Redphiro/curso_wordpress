@@ -54,7 +54,7 @@ add_action('customize_register', 'custom_theme_settings');
 add_action('admin_head', 'css_para_admin');*/
 
 
-//Posts data based on content type
+//Habilitar paginaciones para posttype
 function custom_posts_per_page($query)
 {
     if(!is_admin()){
@@ -66,12 +66,11 @@ function custom_posts_per_page($query)
                 $query->query_vars['orderby'] = 'date';
                 break;
 				
-			
-			/*case 'galerias':
-                $query->query_vars['posts_per_page'] = 6;
+			case 'galerias':
+                $query->query_vars['posts_per_page'] = 3;
                 $query->query_vars['order'] = 'DESC';
                 $query->query_vars['orderby'] = 'date';
-                break;*/
+                break;
         }
         return $query;
     }
@@ -79,14 +78,53 @@ function custom_posts_per_page($query)
 add_filter( 'pre_get_posts', 'custom_posts_per_page' );
 
 
+//Obtener datos de taxonomia (term_id, name, slug, term_group, term_taxonomy_id, taxonomy, description, parent, count, etc...)
+function get_taxonomy_data($type, $taxonomy, $id = null){
+	$post_id = empty($id) ? get_the_ID() : $id;
+	$post_terms = array_reverse(get_terms($taxonomy));
+	$current_terms = wp_get_post_terms($post_id, $taxonomy, array('fields' => 'slugs')); 
+
+	foreach($post_terms as $post_term){
+		if (in_array($post_term->slug, $current_terms)){
+			return $post_term->$type;
+		}
+	} 
+}
+
+
+//Habilitar imagenes destacadas
+add_theme_support('post-thumbnails');
 
 
 
+//Mostrar imagen destacada
+function imageFeatured($featuredPost, $size = 'full')
+{
+    $src = wp_get_attachment_image_src( get_post_thumbnail_id($featuredPost), $size, false); //$post->ID
+    return $src[0];
+}
 
 
+//OBtener ID de videos
+function getVideoID($url)
+{
+	$videoCode = '';
+	$videoID = '';
 
+	if(strpos($url,'youtube') !== false){
+		preg_match('/^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/', $url, $videoCode);
+		$videoID = $videoCode[7];
+	}
+	elseif(strpos($url,'vimeo') !== false){
+		preg_match('/^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/', $url, $videoCode);
+		$videoID = $videoCode[5];
+	}
+	elseif(strpos($url,'facebook') !== false){
+		$videoID = $url;
+	}
 
-
+	return $videoID;
+}
 
 
 
