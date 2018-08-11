@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 11-08-2018 a las 23:39:24
+-- Tiempo de generación: 11-08-2018 a las 23:55:56
 -- Versión del servidor: 5.6.34-log
 -- Versión de PHP: 5.6.31
 
@@ -324,12 +324,12 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (49, 33, '_edit_last', '1'),
 (50, 33, '_edit_lock', '1534029030:1'),
 (51, 34, '_edit_last', '1'),
-(52, 34, '_edit_lock', '1534030579:1'),
+(52, 34, '_edit_lock', '1534031572:1'),
 (53, 34, '_thumbnail_id', '6'),
 (54, 33, '_thumbnail_id', '27'),
 (55, 35, '_edit_last', '1'),
-(56, 35, '_edit_lock', '1534030289:1'),
-(57, 34, 'galerias_tipo', 'galerias'),
+(56, 35, '_edit_lock', '1534031574:1'),
+(57, 34, 'galerias_tipo', 'videos'),
 (58, 34, '_galerias_tipo', 'field_5b6f6dd37c775'),
 (59, 34, 'galerias_fotos', 'a:4:{i:0;s:2:\"28\";i:1;s:2:\"27\";i:2;s:2:\"26\";i:3;s:2:\"25\";}'),
 (60, 34, '_galerias_fotos', 'field_5b6f6db87c773'),
@@ -354,7 +354,11 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (79, 34, 'galerias_videos_1_galerias_titulo_video', 'Otro video'),
 (80, 34, '_galerias_videos_1_galerias_titulo_video', 'field_5b6f6e8617ac6'),
 (81, 34, 'galerias_videos_1_galerias_url_video', 'https://www.youtube.com/watch?v=bBZfJFdiuFk'),
-(82, 34, '_galerias_videos_1_galerias_url_video', 'field_5b6f6e8e17ac7');
+(82, 34, '_galerias_videos_1_galerias_url_video', 'field_5b6f6e8e17ac7'),
+(87, 34, 'galerias_videos_0_galerias_calidad_video', 'maxresdefault'),
+(88, 34, '_galerias_videos_0_galerias_calidad_video', 'field_5b6f76b05e23e'),
+(89, 34, 'galerias_videos_1_galerias_calidad_video', 'hqdefault'),
+(90, 34, '_galerias_videos_1_galerias_calidad_video', 'field_5b6f76b05e23e');
 
 -- --------------------------------------------------------
 
@@ -422,13 +426,14 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (31, 1, '2018-08-11 23:09:36', '2018-08-11 23:09:36', '', 'Vacaciones', '', 'publish', 'closed', 'closed', '', 'vacaciones', '', '', '2018-08-11 23:09:36', '2018-08-11 23:09:36', '', 0, 'http://localhost/curso_wordpress/?post_type=galerias&#038;p=31', 0, 'galerias', '', 0),
 (32, 1, '2018-08-11 23:09:45', '2018-08-11 23:09:45', '', 'Laboral', '', 'publish', 'closed', 'closed', '', 'laboral', '', '', '2018-08-11 23:09:45', '2018-08-11 23:09:45', '', 0, 'http://localhost/curso_wordpress/?post_type=galerias&#038;p=32', 0, 'galerias', '', 0),
 (33, 1, '2018-08-11 23:10:51', '2018-08-11 23:10:51', '', 'Otra', '', 'publish', 'closed', 'closed', '', 'otra', '', '', '2018-08-11 23:11:51', '2018-08-11 23:11:51', '', 0, 'http://localhost/curso_wordpress/?post_type=galerias&#038;p=33', 0, 'galerias', '', 0),
-(34, 1, '2018-08-11 23:10:59', '2018-08-11 23:10:59', '', 'Cualquiera', '', 'publish', 'closed', 'closed', '', 'cualquiera', '', '', '2018-08-11 23:36:18', '2018-08-11 23:36:18', '', 0, 'http://localhost/curso_wordpress/?post_type=galerias&#038;p=34', 0, 'galerias', '', 0),
-(35, 1, '2018-08-11 23:13:51', '2018-08-11 23:13:51', 'a:7:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:8:\"galerias\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";a:1:{i:0;s:11:\"the_content\";}s:11:\"description\";s:0:\"\";}', 'Campos Galerias', 'campos-galerias', 'publish', 'closed', 'closed', '', 'group_5b6f6d8dd1e3d', '', '', '2018-08-11 23:31:28', '2018-08-11 23:31:28', '', 0, 'http://localhost/curso_wordpress/?post_type=acf-field-group&#038;p=35', 0, 'acf-field-group', '', 0),
+(34, 1, '2018-08-11 23:10:59', '2018-08-11 23:10:59', '', 'Cualquiera', '', 'publish', 'closed', 'closed', '', 'cualquiera', '', '', '2018-08-11 23:54:20', '2018-08-11 23:54:20', '', 0, 'http://localhost/curso_wordpress/?post_type=galerias&#038;p=34', 0, 'galerias', '', 0),
+(35, 1, '2018-08-11 23:13:51', '2018-08-11 23:13:51', 'a:7:{s:8:\"location\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"param\";s:9:\"post_type\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:8:\"galerias\";}}}s:8:\"position\";s:6:\"normal\";s:5:\"style\";s:7:\"default\";s:15:\"label_placement\";s:3:\"top\";s:21:\"instruction_placement\";s:5:\"label\";s:14:\"hide_on_screen\";a:1:{i:0;s:11:\"the_content\";}s:11:\"description\";s:0:\"\";}', 'Campos Galerias', 'campos-galerias', 'publish', 'closed', 'closed', '', 'group_5b6f6d8dd1e3d', '', '', '2018-08-11 23:53:53', '2018-08-11 23:53:53', '', 0, 'http://localhost/curso_wordpress/?post_type=acf-field-group&#038;p=35', 0, 'acf-field-group', '', 0),
 (36, 1, '2018-08-11 23:14:36', '2018-08-11 23:14:36', 'a:12:{s:4:\"type\";s:5:\"radio\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:2:{s:6:\"videos\";s:11:\"Tipo Videos\";s:8:\"galerias\";s:13:\"Tipo Galerias\";}s:10:\"allow_null\";i:0;s:12:\"other_choice\";i:0;s:17:\"save_other_choice\";i:0;s:13:\"default_value\";s:0:\"\";s:6:\"layout\";s:8:\"vertical\";s:13:\"return_format\";s:5:\"value\";}', 'Tipo de galeria', 'galerias_tipo', 'publish', 'closed', 'closed', '', 'field_5b6f6dd37c775', '', '', '2018-08-11 23:24:25', '2018-08-11 23:24:25', '', 35, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=36', 0, 'acf-field', '', 0),
 (37, 1, '2018-08-11 23:14:36', '2018-08-11 23:14:36', 'a:16:{s:4:\"type\";s:7:\"gallery\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:3:\"min\";s:0:\"\";s:3:\"max\";s:0:\"\";s:6:\"insert\";s:6:\"append\";s:7:\"library\";s:3:\"all\";s:9:\"min_width\";s:0:\"\";s:10:\"min_height\";s:0:\"\";s:8:\"min_size\";s:0:\"\";s:9:\"max_width\";s:0:\"\";s:10:\"max_height\";s:0:\"\";s:8:\"max_size\";s:0:\"\";s:10:\"mime_types\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5b6f6dd37c775\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:8:\"galerias\";}}}}', 'Fotografias', 'galerias_fotos', 'publish', 'closed', 'closed', '', 'field_5b6f6db87c773', '', '', '2018-08-11 23:24:26', '2018-08-11 23:24:26', '', 35, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=37', 1, 'acf-field', '', 0),
 (38, 1, '2018-08-11 23:14:36', '2018-08-11 23:14:36', 'a:10:{s:4:\"type\";s:8:\"repeater\";s:12:\"instructions\";s:28:\"Ingrese los links de youtube\";s:8:\"required\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:9:\"collapsed\";s:0:\"\";s:3:\"min\";s:0:\"\";s:3:\"max\";s:0:\"\";s:6:\"layout\";s:5:\"table\";s:12:\"button_label\";s:0:\"\";s:17:\"conditional_logic\";a:1:{i:0;a:1:{i:0;a:3:{s:5:\"field\";s:19:\"field_5b6f6dd37c775\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:6:\"videos\";}}}}', 'Links Videos', 'galerias_videos', 'publish', 'closed', 'closed', '', 'field_5b6f6dc67c774', '', '', '2018-08-11 23:24:26', '2018-08-11 23:24:26', '', 35, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=38', 2, 'acf-field', '', 0),
 (39, 1, '2018-08-11 23:17:49', '2018-08-11 23:17:49', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'Titulo video', 'galerias_titulo_video', 'publish', 'closed', 'closed', '', 'field_5b6f6e8617ac6', '', '', '2018-08-11 23:31:28', '2018-08-11 23:31:28', '', 38, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=39', 0, 'acf-field', '', 0),
-(40, 1, '2018-08-11 23:17:49', '2018-08-11 23:17:49', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'URL Video', 'galerias_url_video', 'publish', 'closed', 'closed', '', 'field_5b6f6e8e17ac7', '', '', '2018-08-11 23:31:28', '2018-08-11 23:31:28', '', 38, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=40', 1, 'acf-field', '', 0);
+(40, 1, '2018-08-11 23:17:49', '2018-08-11 23:17:49', 'a:10:{s:4:\"type\";s:4:\"text\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:13:\"default_value\";s:0:\"\";s:11:\"placeholder\";s:0:\"\";s:7:\"prepend\";s:0:\"\";s:6:\"append\";s:0:\"\";s:9:\"maxlength\";s:0:\"\";}', 'URL Video', 'galerias_url_video', 'publish', 'closed', 'closed', '', 'field_5b6f6e8e17ac7', '', '', '2018-08-11 23:31:28', '2018-08-11 23:31:28', '', 38, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=40', 1, 'acf-field', '', 0),
+(41, 1, '2018-08-11 23:53:08', '2018-08-11 23:53:08', 'a:12:{s:4:\"type\";s:5:\"radio\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";i:0;s:17:\"conditional_logic\";i:0;s:7:\"wrapper\";a:3:{s:5:\"width\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";}s:7:\"choices\";a:5:{s:7:\"default\";s:6:\"Normal\";s:9:\"hqdefault\";s:2:\"HQ\";s:9:\"mqdefault\";s:2:\"MQ\";s:9:\"sddefault\";s:2:\"SD\";s:13:\"maxresdefault\";s:7:\"FULL HD\";}s:10:\"allow_null\";i:0;s:12:\"other_choice\";i:0;s:17:\"save_other_choice\";i:0;s:13:\"default_value\";s:0:\"\";s:6:\"layout\";s:8:\"vertical\";s:13:\"return_format\";s:5:\"value\";}', 'Calidad Miniatura', 'galerias_calidad_video', 'publish', 'closed', 'closed', '', 'field_5b6f76b05e23e', '', '', '2018-08-11 23:53:53', '2018-08-11 23:53:53', '', 38, 'http://localhost/curso_wordpress/?post_type=acf-field&#038;p=41', 2, 'acf-field', '', 0);
 
 -- --------------------------------------------------------
 
@@ -710,12 +715,12 @@ ALTER TABLE `wp_options`
 -- AUTO_INCREMENT de la tabla `wp_postmeta`
 --
 ALTER TABLE `wp_postmeta`
-  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=87;
+  MODIFY `meta_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 --
 -- AUTO_INCREMENT de la tabla `wp_posts`
 --
 ALTER TABLE `wp_posts`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT de la tabla `wp_termmeta`
 --

@@ -18,7 +18,7 @@
 	$images = get_field('galerias_fotos');
 
 	if( $images ): ?>
-		<div class="row">
+		<div class="row galerias-single">
 			<?php foreach( $images as $image ): ?>
 				<a href="<?php echo $image['url']; ?>" class="col-xs-3">
 					 <img src="<?php echo $image['sizes']['thumbnail']; ?>" class="img-responsive" style="width: 100%">
@@ -42,11 +42,16 @@
 			// vars
 			$titulo_video = get_sub_field('galerias_titulo_video');
 			$url_video = get_sub_field('galerias_url_video');
+			$calidad_video = get_sub_field('galerias_calidad_video');
 
 			?>
 			<div class="col-xs-6">
 				 <h4><?php echo $titulo_video; ?></h4>
-				<iframe width="100%" height="500" src="https://www.youtube.com/embed/<?php echo getVideoID($url_video); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<!--<iframe width="100%" height="500" src="https://www.youtube.com/embed/<?php echo getVideoID($url_video); ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+				<a href="<?php echo $url_video; ?>" target="_blank">
+					<img src="https://img.youtube.com/vi/<?php echo getVideoID($url_video); ?>/<?php echo $calidad_video; ?>.jpg" width="100%">
+					<!--tamaños son default, hqdefault, mqdefault, sddefault, maxresdefault -->
+				</a>
 			</div>
 			
 
@@ -67,3 +72,15 @@
 <?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
+
+ <script>
+	$(document).ready(function(){
+		
+
+		$('.galerias-single').lightGallery({
+			thumbnail:true,
+		}); 
+
+
+	});
+</script>

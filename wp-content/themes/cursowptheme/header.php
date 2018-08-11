@@ -9,6 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/estilos.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.png">
+	<!-- LightGallery Lightbox -->
+	<link href="<?php echo get_bloginfo('template_url'); ?>/lightgallery/css/lightgallery.min.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_url'); ?>/lightgallery/css/lg-transitions.min.css" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_url'); ?>/lightgallery/css/lg-fb-comment-box.min.css" rel="stylesheet">
 	
 	<?php
 	/* Always have wp_head() just before the closing </head>

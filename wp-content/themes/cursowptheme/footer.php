@@ -11,6 +11,9 @@
     <!--Archivos Js-->
 	<script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="<?php echo get_bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+	<!-- LightGallery Lightbox -->
+	<script src="<?php echo get_bloginfo('template_url'); ?>/lightgallery/js/lightgallery-all.min.js"></script>
+
     <script>
 	$(document).ready(function(){
 		$(".scroll").click(function(event){		
