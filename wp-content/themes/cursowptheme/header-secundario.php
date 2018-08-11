@@ -33,36 +33,18 @@
                 
                 </button>
                 
-                <a href="<?php echo get_home_url(); ?>" class="navbar-brand"><strong><?php echo get_theme_mod('header-titulo'); ?></strong></a>
-            </div>
-            <div class="navbar-collapse collapse">
-            	<ul class="nav navbar-nav">
-                	<li><a href="#page-top" class="scroll">Inicio</a></li>
-                	<li><a href="#promociones" class="scroll">Promociones</a></li>
-               		<li><a href="#descuentos" class="scroll">Descuentos</a></li>
-                    <li><a href="#productos" class="scroll">Productos</a></li>
-                    
-                </ul>
+                <a href="<?php echo get_home_url(); ?>" class="navbar-brand scroll"><strong><?php echo get_theme_mod('header-titulo'); ?></strong></a>
             </div>
           </div>
        </nav>   
 	<!--/Fin Barra de Navegación-->
     
     <!--Header-->
-    <header style="background-image: url('<?php echo get_theme_mod('header-banner'); ?>')">
+    <header style="background-image: url('<?php echo get_theme_mod('header-banner'); ?>'); min-height:130px;">
     	<div class="container">
         	<div class="row">
-            	<div class="col-xs-12 col-sm-5 col-sm-offset-1">
-    			<h1><?php echo get_theme_mod('header-subtitulo'); ?></h1>
-                	<form action="" class="form-inline">
-                		<div class="form-group">
-                    	<input type="text" class="form-control" id="suscribir" placeholder="Nescafe Dolce Gusto">
-                        <button type="submit" class="btn btn-warning btn-lg">Promoción</button>
-                      </div>
-                	</form>
-                </div>
-                <div class="col-sm-4 col-sm-offset-2">
-                	<a href="http://www.dolce-gusto.cl" target="_blank"><img class="img-responsive center-block" src="<?php echo get_bloginfo('template_url'); ?>/img/logo-dolce-gusto.png"></a>
+                <div class="col-sm-4">
+                	<a href="http://www.dolce-gusto.cl" target="_blank"><img width="200" class="img-responsive center-block" src="<?php echo get_bloginfo('template_url'); ?>/img/logo-dolce-gusto.png" style="margin-bottom: 50px"></a>
                 </div>
             </div>
     	</div>
