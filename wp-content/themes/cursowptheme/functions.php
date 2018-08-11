@@ -54,7 +54,29 @@ add_action('customize_register', 'custom_theme_settings');
 add_action('admin_head', 'css_para_admin');*/
 
 
-
+//Posts data based on content type
+function custom_posts_per_page($query)
+{
+    if(!is_admin()){
+        switch ($query->query_vars['post_type'])
+        {
+            case 'noticias':
+                $query->query_vars['posts_per_page'] = 3;
+                $query->query_vars['order'] = 'DESC';
+                $query->query_vars['orderby'] = 'date';
+                break;
+				
+			
+			/*case 'galerias':
+                $query->query_vars['posts_per_page'] = 6;
+                $query->query_vars['order'] = 'DESC';
+                $query->query_vars['orderby'] = 'date';
+                break;*/
+        }
+        return $query;
+    }
+}
+add_filter( 'pre_get_posts', 'custom_posts_per_page' );
 
 
 
