@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Nescafe Dolce Gusto</title>
+	<title><?php echo get_theme_mod('header-titulo'); ?></title>
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/estilos.css" />
@@ -33,7 +33,7 @@
                 
                 </button>
                 
-                <a href="#page-top" class="navbar-brand scroll"><strong>Nescafe Dolce Gusto</strong></a>
+                <a href="#page-top" class="navbar-brand scroll"><strong><?php echo get_theme_mod('header-titulo'); ?></strong></a>
             </div>
             <div class="navbar-collapse collapse">
             	<ul class="nav navbar-nav">
@@ -48,11 +48,11 @@
 	<!--/Fin Barra de Navegación-->
     
     <!--Header-->
-    <header>
+    <header style="background-image: url('<?php echo get_theme_mod('header-banner'); ?>')">
     	<div class="container">
         	<div class="row">
             	<div class="col-xs-12 col-sm-5 col-sm-offset-1">
-    			<h1>Vive tu placer</h1>
+    			<h1><?php echo get_theme_mod('header-subtitulo'); ?></h1>
                 	<form action="" class="form-inline">
                 		<div class="form-group">
                     	<input type="text" class="form-control" id="suscribir" placeholder="Nescafe Dolce Gusto">

@@ -3,8 +3,7 @@
 	<!--Cuarta Seccion-->
 	<div class="container">
 		<div class="row centrado">
-			<p>Llámanos gratuitamente  desde el rojo fijo o celulares al 800 213 006
-		 Lunes a Viernes de 9h a 19h y Sábado de 9h a 14h </p> 
+			<p><?php echo get_theme_mod('footer-texto'); ?></p> 
 		</div>
 	</div>
 	<!--/Fin Cuarta Seccion-->
