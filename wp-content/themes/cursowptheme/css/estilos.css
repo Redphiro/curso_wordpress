@@ -1,0 +1,154 @@
+body{
+	background-color:#f2f2f2;
+	font-family: "Open Sans", sans-serif;
+	font-size:16px;
+	color:#333;	
+	
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:300;
+	font-family: "Open Sans", sans-serif;
+	color:#644228;
+}
+h1{
+	font-size:50px;
+	font-weight:bold;
+}
+
+h3{
+	color:#333;
+	
+}
+
+h4{
+	color:#644228;
+	font-size:25px;
+	font-weight:bold;
+}
+
+
+p{
+	line-height:30px;
+	margin-bottom:25px;	
+}
+
+a{
+ 	color:#fff;	
+	
+}
+
+a:hover, a:focus, a:active{
+	color:#C60;	
+	
+	
+}
+button{
+	margin-top:20px;	
+	
+	
+}
+
+hr{
+	display:block;
+	height:1px;
+	border:0;
+	border-top: 1px solid #000;	
+	margin:1em 0;
+	padding:0;
+	
+}
+
+.navbar-default{
+	background-color:rgba(0,0,0,.8);
+	border-color:transparent;
+	
+	
+}
+
+.navbar-default .navbar-brand{
+	color:white;
+	
+	
+}
+
+.navbar-default .navbar-brand:hover{
+	color:#C93;
+	
+	
+}
+
+.navbar-default .navbar-brand:focus{
+	color:#C93;
+	
+	
+}
+
+.navbar-default .navbar-nav li a{
+	color:white;
+	
+	
+}
+
+.navbar-default .navbar-nav li a:hover{
+	color:#C93;
+	
+}
+
+.navbar-default .navbar-nav li a:focus{
+	color:#C93;
+	
+}
+
+
+header{
+	background-image:url(../img/2-cafe-wallpaper-19.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	width:100%;
+	min-height:530px;
+	padding-top:100px;
+	
+	
+}
+
+header h1{
+	color:#fff;
+	margin-bottom:15px;
+	letter-spacing:1px;
+	margin-top:20px;	
+	
+	
+}
+
+
+.centrado{
+	margin: 40px 0;
+	text-align:center;	
+	
+	
+}
+
+
+/*::::::::::::::::::::::::::AJUSTES RESPONSIVOS::::::::::::::::::::::::::::::::::*/
+@media screen and (max-width: 768px){
+	header h1{
+		margin:15px 0;
+		font-size:24px;
+	}
+	
+	iframe{
+		height:200px;	
+		
+	}
+	
+	h1{
+		font-size:30px;	
+		
+		
+	}
+	
+	
+	
+}
